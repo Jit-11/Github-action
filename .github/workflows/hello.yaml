@@ -1,0 +1,13 @@
+name: My_First_Github_Action_Demo
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Printing message
+        run: echo "I am Jit Patel and triger workflow when code push to main branch"
