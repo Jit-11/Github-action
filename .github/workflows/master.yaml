@@ -9,8 +9,11 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
+            - name: git checkout repo
+              uses: actions/checkout@v6
+
             - name: Compile file
-              run: gcc first.cpp -o a
+              run: gcc first.cpp -o a.out
 
             - name: Print Output
               run: ./a.out
