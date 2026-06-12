@@ -1,0 +1,16 @@
+name: Print
+
+on:
+    push:
+        branches: [master]
+
+jobs:
+    build-and-test:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Compile file
+              run: gcc first.cpp -o a
+
+            - name: Print Output
+              run: ./a.out

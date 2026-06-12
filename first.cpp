@@ -2,6 +2,6 @@
 using namespace std;
 int main()
 {
-    cout<<"Hello World, I am Jit Patel and we are use and learning github actions";
+    cout<<"Hello World, I am Jit Patel and we are in master branch";
     return 0;
 }
