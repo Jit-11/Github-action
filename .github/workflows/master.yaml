@@ -18,8 +18,8 @@ jobs:
       - name: compile file
         run: g++ first.cpp -o a.out
 
-      - name: Give Input
-        run: echo "5" | ./first
-
       - name: Print Output
         run: ./a.out
+
+      - name: Give Input
+        run: echo "5" | ./first
