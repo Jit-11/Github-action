@@ -12,8 +12,14 @@ jobs:
       - name: git checkout repo
         uses: actions/checkout@v4
 
-      - name: Compile file
+      - name: Print all files
+        run: ls -la
+
+      - name: compile file
         run: g++ first.cpp -o a.out
+
+      - name: Give Input
+        run: echo "5" | ./first
 
       - name: Print Output
         run: ./a.out
