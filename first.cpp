@@ -2,9 +2,6 @@
 using namespace std;
 int main()
 {
-    cout<<"Hello World\n";
-    int number;
-    cin>>number;
-    cout<<"user enter "<<number<<"\n";
+    cout<<"Hello World, I am Jit Patel and we are use and learning github actions";
     return 0;
 }
