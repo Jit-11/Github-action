@@ -1,0 +1,19 @@
+name: Print
+run-name: This commit is push by ${{github.actor}}
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: git checkout repo
+        uses: actions/checkout@v4
+
+      - name: Compile file
+        run: g++ first.cpp -o a.out
+
+      - name: Print Output
+        run: ./a.out
