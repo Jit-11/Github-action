@@ -22,4 +22,4 @@ jobs:
         run: ./a.out
 
       - name: Give Input
-        run: echo "5" | ./a.out
+        run: echo 5 | ./a.out
