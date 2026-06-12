@@ -2,8 +2,10 @@ name: Print
 run-name: This commit is push by ${{github.actor}}
 on:
   push:
-    branches: [master]
-
+    branches:
+      - master
+    paths:
+      - "first.cpp"
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
@@ -17,9 +19,6 @@ jobs:
 
       - name: compile file
         run: g++ first.cpp -o a.out
-
-      - name: Print Output
-        run: ./a.out
 
       - name: Give Input
         run: echo 5 | ./a.out
